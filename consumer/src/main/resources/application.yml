@@ -1,0 +1,14 @@
+server:
+  port: 25556
+spring:
+  application:
+    name: consumer
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848 #注册地址
+  application:
+    name: consumer #应用名
+  consumer:
+    timeout: 30000 #超时时间
+service:
+  version: 1.0.0 #自定义的版本，和消费者模块保持一致
